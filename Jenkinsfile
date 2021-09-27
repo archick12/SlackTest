@@ -15,6 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+		slackSend color: "good", message: "Message from Jenkins Pipeline"
             }
         }
     }
